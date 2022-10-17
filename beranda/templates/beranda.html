@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    <center><h1>BERANDA</h1></center>
+    <p>Halo, Selamat Datang di Situs Pembelajaran O-Math </p>
+    <center><img src="https://1.bp.blogspot.com/-E9evKZuiCyk/YTRdbbfR6DI/AAAAAAAAHBg/ngkjB_MRSjsJ5oNaQ-PkCbmipFo97JwdwCLcBGAsYHQ/w640-h640/Gambar%2BKartun%2BAnak%2BBelajar%2Bdi%2BRumah%2B%25281%2529.png", width="25%"></center>
+    <p align="justify">Apa itu O-Math?</p>
+    <p align="justify">O-Math merupakan situs pembelajaran Matematika online untuk mengupas materi tentang Lingkaran. Dalam situs O-Math, akan disajikan materi-materi tentang Lingkaran, rangkuman materi, dan bank latihan soal.</p>
+
+    {{title | upper }} <br>
+    {% for s1 in s1 %}
+        <li>{{s1}}</li>
+    {% endfor %}
+
+{% endblock %}

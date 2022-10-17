@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    <center><h1>Tentang Penulis</h1></center>
+    
+    <p align="justify">Nama : Siti Azriah Yundianti</p>
+    <p align="justify">Tanggal Lahir : 25 Juni 2003</p>
+    <p align="justify">Alamat Rumah : Kp. Bojong Renged RT. 003/RW.001 Desa Bojong Renged, Kec. Teluknaga, Kab. Tangerang</p>
+    <p align="justify">Hobi : Membaca</p>
+    <p align="justify"><i class='bx bxs-phone-call'></i> Telepon: (021)-991-288-18</p>
+    <p align="justify"><i class='bx bxs-envelope'></i> E-mail: <a href="mailto:2225210047@untirta.ac.id">omath@gmail.com</a></p>
+    <p align="justify"><i class='bx bxl-instagram-alt'></i> Instagram: <a href="https://instagram.com/szrhynd">@o_math</a></p>
+
+    {{title | upper }} <br>
+    {% for s1 in s1 %}
+        <li>{{s1}}</li>
+    {% endfor %}
+
+{% endblock %}
