@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    <center><h1>RANGKUMAN</h1></center>
+    
+    <h2><strong>Lingkaran & Unsur-Unsurnya</strong></h2>	
+    <ul>
+        <li>Lingkaran adalah kurva tertutup sederhana yang merupakan tempat kedudukan titk-titk yang berjarak sama terhadap suatu titik tertentu.</li>
+        <li>Titik pusat lingkaran adalah titik yang terletak di tengah-tengah lingkaran.</li>
+        <li>Jari-jari lingkaran adalah garis yang ditarik dari titik pusat ke lengkungan suatu lingkaran dan akan selalu berjarak sama dan dilambangkan dengan <i>r</i>.</li>
+        <li>Diameter lingkaran adalah garis lurus yang menghubungkan dua titik pada suatu lengkungan lingkaran dan melalui titik pusat dan dilambangkan dengan <i>d</i>.</li>
+        <li>Besar diameter yaitu <i>d = 2r</i></li>
+        <li>Tali busur adalah ruas garis yang menghubungkan dua titik pada keliling lingkaran.</li>
+        <li>Apotema adalah jarak terpendek antara tali busur dan titik pusat suatu lingkaran.</li>
+        <li>Busur lingkaran adalah garis lengkung tempat bertemunya dua garis jari-jari yang membentuk juring lingkaran.</li>
+        <li>Juring lingkaran adalah daerah yang dibatasi oleh dua jari-jari.</li>
+        <li>Tembereng lingkaran adalah daerah yang dibatasi oleh busur dan tali busur.</li>
+    </ul> <br>
+
+    <h2><strong>Keliling & Luas Lingkaran</strong></h2>
+        <ul>
+            <li>Keliling lingkaran (<i>k</i>) adalah panjang lengkungan yang membentuk lingkaran tersebut.</li>
+            <li>Rumus mencari keliling lingkaran yaitu <i>k</i> = π<i>d</i> atau <i>k</i> = 2π<i>r</i></li>
+            <li>Luas lingkaran <i>L</i> merupakan luas daerah yang dibatasi oleh keliling lingkaran.</li>
+            <li>Rumus mencari luas lingkaran yaitu <i>L</i> = π<i>r</i><sup>2</sup></li>
+        </ul><br>
+
+    <h2><strong>Garis Singgung Lingkaran</strong></h2>
+        <ul>
+            <li>Garis singgung lingkaran adalah garis yang memotong lingkaran tepat di satu titik.</li>
+            <li>Setiap garis singgung lingkaran selalu tegak lurus terhadap jari-jari (diameter) yang melalui titik singgungnya.</li>
+            <li>Untuk menentukan panjang garis singgung suatu lingkaran berlaku Teorema Pythagoras.</li>
+            <li>Kedua garis singgung lingkaran yang ditarik dari sebuah titik di luar lingkaran mempunyai panjang yang sama.</li>
+        </ul><br>
+
+    <h2><strong>Garis Singgung Persekutuan Dua Lingkaran</strong></h2>
+        <ul>
+            <li>Secara umum, kedudukan dua lingkaran dapat dikelompokkan menjadi tiga jenis, yaitu dua lingkaran bersinggungan, berpotongan, dan saling lepas.</li>
+            <li>Panjang garis singgung persekutuan luar dua lingkaran adalah: √(k<sup>2</sup> - (R - r)<sup>2</sup> )   ; R>r</li>
+            <li>Panjang garis singgung persekutuan dalam dua lingkaran adalah: d = √(k<sup>2</sup> - (R + r)<sup>2</sup>)</li>
+        </ul><br>
+
+    {{title | upper }} <br>
+    {% for s1 in s1 %}
+        <li>{{s1}}</li>
+    {% endfor %}
+
+{% endblock %}
